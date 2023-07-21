@@ -52,6 +52,7 @@ struct LoginView: View {
                 "E-Mail",
                 text: $email
             )
+            .autocapitalization(.none)
             
             SecureField(
                 "Password",
@@ -63,7 +64,19 @@ struct LoginView: View {
                 }
                 
                 Button("Login") {
-                    LoginManager.shared.login(email: email, password: password)
+                    print("Logging in...")
+                    print("E-Mail: \(email)")
+                    print("Password: \(password)")
+                    LoginManager.shared.login(
+                        email: email,
+                        password: password,
+                        onCompletion: {
+                            print(LoginManager.shared.currentUser as Any)
+                        },
+                        onError: {err in
+                            print("Login failed")
+                            print(err)
+                        })
                 }
             }
         }

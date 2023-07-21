@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810CD16A2A67191800215E65 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CD1692A67191800215E65 /* User.swift */; };
+		810CD16C2A6719B700215E65 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CD16B2A6719B700215E65 /* Location.swift */; };
+		810CD1702A671AD800215E65 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CD16F2A671AD800215E65 /* Session.swift */; };
 		81CCAE2B2A65565C0003FD01 /* Jonko_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CCAE2A2A65565C0003FD01 /* Jonko_TrackerApp.swift */; };
 		81CCAE2D2A65565C0003FD01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CCAE2C2A65565C0003FD01 /* ContentView.swift */; };
 		81CCAE2F2A65565C0003FD01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CCAE2E2A65565C0003FD01 /* Assets.xcassets */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		810CD1692A67191800215E65 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		810CD16B2A6719B700215E65 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		810CD16F2A671AD800215E65 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		81CCAE272A65565C0003FD01 /* Jonko Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jonko Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CCAE2A2A65565C0003FD01 /* Jonko_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jonko_TrackerApp.swift; sourceTree = "<group>"; };
 		81CCAE2C2A65565C0003FD01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +40,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		810CD1682A67190E00215E65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				810CD1692A67191800215E65 /* User.swift */,
+				810CD16B2A6719B700215E65 /* Location.swift */,
+				810CD16F2A671AD800215E65 /* Session.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		81CCAE1E2A65565C0003FD01 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +69,7 @@
 		81CCAE292A65565C0003FD01 /* Jonko Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				810CD1682A67190E00215E65 /* Models */,
 				81CCAE2A2A65565C0003FD01 /* Jonko_TrackerApp.swift */,
 				81CCAE2C2A65565C0003FD01 /* ContentView.swift */,
 				81CCAE2E2A65565C0003FD01 /* Assets.xcassets */,
@@ -140,7 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810CD16A2A67191800215E65 /* User.swift in Sources */,
 				81CCAE2D2A65565C0003FD01 /* ContentView.swift in Sources */,
+				810CD1702A671AD800215E65 /* Session.swift in Sources */,
+				810CD16C2A6719B700215E65 /* Location.swift in Sources */,
 				81CCAE2B2A65565C0003FD01 /* Jonko_TrackerApp.swift in Sources */,
 				81CCAE392A6556820003FD01 /* LoginManager.swift in Sources */,
 			);
